@@ -1,0 +1,24 @@
+GET http://localhost:3000/subscribers/
+
+###add subscriber
+POST http://localhost:3000/subscribers/
+Content-Type: application/json
+
+{"name":"Maureen Marcus",
+"subscriberToChannel" : "Sasha Favoured"}
+
+###get one
+
+GET http://localhost:3000/subscribers/676073b098bb601dbb854839
+
+###delete one
+
+DELETE http://localhost:3000/subscribers/676080613b83603a451a4765 
+
+###update one
+
+PATCH  http://localhost:3000/subscribers/67606ca8715deabcf4eaf65d
+Content-Type: application/json
+
+{"name":"Maureen Matayos343",
+"subscriberToChannel" : "Sasha Favoured1"}
